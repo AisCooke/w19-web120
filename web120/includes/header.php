@@ -3,8 +3,12 @@
 <head>
 <title><?=$title?></title>
 <meta name="viewport" content="width=device-width" />
-<meta name="robots" content="noindex,nofollow" />
 <meta charset="utf-8">
+
+<meta name="robots" content="<?=$robots?>" />
+<meta name="description" content="<?=$meta_description?>"/>
+<meta name="keywords" content="<?=$meta_keywords?>"/>
+
 <script src="https://use.fontawesome.com/1398ffe036.js"></script>
 <link rel="stylesheet" href="css/nav.css" />
 <link rel="stylesheet" href="css/portal.css" />

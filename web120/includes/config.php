@@ -21,30 +21,30 @@ $logo_color = ''; //make logo_color an empty string by default
 
 switch(THIS_PAGE){
     case 'index.php': 
-        $title = 'Welcome';
+        $title = 'Welcome | Aisling Cooke | WEB120';
         $logo = "fa-home";
     break;
 
     case 'big/index.php': 
-        $title = 'Big';
+        $title = 'Big | Aisling Cooke | WEB120';
     break;
 
     case 'aia.php': 
-        $title = 'AIA';
+        $title = 'AIA | Aisling Cooke | WEB120';
         $logo = "fa-universal-access";
         $logo_color = ' style="color:blue"';
     break;
 
     case 'flowchart.php': 
-        $title = 'Flowchart';
+        $title = 'Flowchart | Aisling Cooke | WEB120';
     break;
 
     case 'fp/index.php': 
-        $title = 'Final Project';
+        $title = 'Final Project | Aisling Cooke | WEB120';
     break;
 
     case 'contactme.php': 
-        $title = 'Contact Aisling';
+        $title = 'Contact | Aisling Cooke | WEB120';
         $logo = "fa-paper-plane-o";
         $logo_color = ' style="color:green"';
     break;
@@ -76,6 +76,26 @@ function makeLinks($linkArray)
     return $myReturn;    
 }
 
+//no index while building a client site in our space
+$robots = "noindex,nofollow";
+$meta_description = "Web developer seeking employment in Seattle.  Focus on JavaScript, CSS & HTML.";
+$meta_keywords = "graphic design, website design, website builder, logo design, create a website, web design, web designer, web development, web developer, seattle designer, seattle web designer, seattle web developer, student web designer, student web developer, web design portfolio, javascript, css, html,";
+
+
+switch(THIS_PAGE){
+   
+    case 'index.php':
+        $title = 'Welcome | Aisling Cooke | WEB120';
+    break;
+        
+    case 'contactme.php':
+        $title = 'Contact | Aisling Cooke | WEB120';
+        $robots = "noindex,follow";
+        $meta_description = "Please contact Aisling. I'm a " . $meta_description;
+        $meta_keywords = "contact me, contact a web designer, contact page, find out more, " . $meta_keywords;
+    break;    
+        
+}
 
 
 
