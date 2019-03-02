@@ -80,7 +80,7 @@ footer {
 	
     img.desktop {
       		 float:left;
-               width:48%;
+               width:50%;
                padding: 1%;
    	 }
     
@@ -109,7 +109,7 @@ footer {
 	}
 	
             img.tablet {
-       		width: 98%;
+       		width:100%;
             padding: 1%;
            }
     
@@ -128,7 +128,7 @@ footer {
 @media all and (max-width:640px) {
     
     img.phone {
-               width:98%;
+               width:100%;
                padding: 1%;
     }
     

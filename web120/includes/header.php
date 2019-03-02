@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="css/nav.css" />
 <link rel="stylesheet" href="css/portal.css" />
 <link rel="stylesheet" href="css/form.css" />
+<link rel="stylesheet" href="css/table.css" />
+<link rel="stylesheet" href="css/iframe.css" />
 </head>
 
 <body>
