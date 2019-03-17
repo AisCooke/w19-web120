@@ -8,6 +8,47 @@ body, html {
 h1, h2, h3, h4, h5 {
   font-family: 'Rokkitt', serif;
 }
+
+main{
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+section, div{
+  overflow: hidden;
+}
+
+div img{
+  width: 100%;
+  height: auto;
+}
+  
+section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1{
+  text-align: center;
+}
+
+
   
 /* nav */
 nav{
@@ -17,8 +58,8 @@ nav{
   justify-content: center;
   font-family: 'Rokkitt', serif;
   line-height: 75px;
+  overflow: auto;
 }
-
 nav a{
   text-decoration: none;
   color: white;
@@ -48,7 +89,7 @@ header {
   left: 0px;
   width: 100%;
 }
-/* nav dropdowns 
+
 ul.topnav {
   list-style-type: none;
   margin: 0;
@@ -71,11 +112,13 @@ ul.topnav li {display: inline-block;}
   display: inline-block;
 }
 
+
+
 /* logo scrolling and responsive */
 
-.white{
+img.white{
   display: inline-block;
-  height: 75px;
+  height: 75px ;
   width: auto;
   vertical-align: middle;
 }
@@ -110,11 +153,11 @@ ul.topnav li {display: inline-block;}
   position: relative;
 }
 
-/* nav dropdowns */
+/* nav dropdowns 
 .dropdown {
   float: left;
 }
-nav div.dropdown{
+nav li.dropdown{
   padding: 5px;
   margin: 0 5%;
 }
@@ -144,7 +187,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-end comment out nav dropdowns */
+
 
 /* footer*/
 footer {
@@ -285,45 +328,6 @@ h2{
   .col-two-thirds {width: 66.66%;}
   .col-full {width: 100%;}
   .embed-container {padding-bottom: 50% !important;}
-}
-
-main{
-  max-width: 1200px;
-  width: 90%;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  overflow: hidden;
-}
-
-section, div{
-  overflow: hidden;
-}
-
-div img{
-  width: 100%;
-  height: auto;
-}
-  
-section::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-h1{
-  text-align: center;
 }
 
 

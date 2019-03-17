@@ -19,52 +19,53 @@
     <header id="navbar">
       <a href="index.php" class="mobile-white"><img src="images/logo-white.svg" alt="Dave's Meat and Produce"></a>
       <nav>
-        <div class="dropdown">
+       <!-- comment out
+        <ul>
+        <li class="dropdown">
           <a href="" class="dropbtn">Meat</a>
-          <div class="dropdown-content">
-            <a href="#">Beef</a>
-            <a href="#">Pork</a>
-            <a href="#">Sausage</a>
-            <a href="#">Lamb</a>
-            <a href="#">Poultry</a>
-            <a href="#">Fish</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <a href="" class="dropbtn">Produce</a>
-          <div class="dropdown-content">
-            <a href="#">Fruit</a>
-            <a href="#">Vegetables</a>
-          </div>
-        </div>
-        <a class="logo" href="index.php">
+          <ul class="dropdown-content">
+          <li><a href="#">Beef</a></li>
+            <li><a href="#">Pork</a></li>
+            <li><a href="#">Sausage</a></li>
+            <li><a href="#">Lamb</a></li>
+            <li><a href="#">Poultry</a></li>
+            <li><a href="#">Fish</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropbtn">Produce</a></li>
+          <ul class="dropdown-content">
+          <li><a href="#">Fruit</a></li>
+            <li><a href="#">Vegetables</a></li>
+          </ul>
+        </li>
+        <li><a class="logo" href="index.php">
           <img class="white" src="images/logo-white.svg" alt="Dave's Meat and Produce">
           <img class="black" src="images/logo-black.svg" alt="Dave's Meat and Produce">
-        </a>
-        <div class="dropdown">
+        </a></li>
+        <li class="dropdown">
           <a href="" class="dropbtn">About</a>
-          <div class="dropdown-content">
-            <a href="#">Our Story</a>
-            <a href="#">Philosophy</a>
-            <a href="#">Farms</a>
-          </div>
-        </div>
-        <a href="" class="dropbtn">Contact</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Philosophy</a></li>
+            <li><a href="#">Farms</a></li>
+          </ul>
+        </li>
+        <li><a href="" class="dropbtn">Contact</a></li>
+      </ul> -->
 
-<!-- START COMMENT OUT NAV
       <ul class="topnav" id="myTopnav">
-      ?=makeLinks($nav1)?>
-
+     <li><a href="">Meat</a></li>
+     <li><a href="">Meat</a></li>
       <li class="logo" >
         <a href="index.php">
           <img class="white" src="images/logo-white.svg" alt="Dave's Meat and Produce">
           <img class="black" src="images/logo-black.svg" alt="Dave's Meat and Produce">
         </a>
       </li>
-
-      ?=makeLinks($nav2)?>  
+      <li><a href="">Meat</a></li>
+      <li><a href="">Meat</a></li>
     </ul>
-    END COMMENT OUT NAV -->
 
       </nav>
     </header>
