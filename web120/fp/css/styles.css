@@ -14,16 +14,14 @@ nav{
   display: flex;
   width: 100%;
   height: auto;
-  align-items: center;
   justify-content: center;
   font-family: 'Rokkitt', serif;
+  line-height: 75px;
 }
 
 nav a{
   text-decoration: none;
   color: white;
-  padding: 5px;
-  margin: 0 5%;
   font-family: inherit;
   font-weight: 200;
 }
@@ -50,25 +48,54 @@ header {
   left: 0px;
   width: 100%;
 }
+/* nav dropdowns 
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.topnav li {display: inline-block;} 
+
+#myTopnav {
+  text-align: justify;
+  min-width: 80%;
+}
+#myTopnav:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+#nav li {
+  display: inline-block;
+}
 
 /* logo scrolling and responsive */
 
 .white{
+  display: inline-block;
   height: 75px;
   width: auto;
+  vertical-align: middle;
 }
 .black{
-  display: none; 
-  height: 50px;
-  width: auto;
+  display: none;
 }
 .active .white{
   display: none;
 }
 .active .black{
-  display: inline;
+  display: inline-block;
+  height: 49px;
+  width: auto;
+  vertical-align: middle;
 }
-
+.active nav{
+  line-height: 50px;
+  height: 60px;
+  padding: 5px;
+}
 .mobile-white{
   display: none;
 }
@@ -117,6 +144,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+end comment out nav dropdowns */
 
 /* footer*/
 footer {
@@ -139,13 +167,34 @@ html, body {
   margin-bottom: -50px;
 }
 
+
+/* embed responsively */
+.embed-container { 
+  position: relative; 
+  padding-bottom: 100%; 
+  height: 0; 
+  overflow: hidden; 
+  max-width: 100%; 
+}
+.embed-container iframe, .embed-container object, .embed-container embed { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+}
+h2{
+  margin-block-start: 0;
+}
+
 /* RESPONSIVE MEDIA QUERIES */
 
 @media only screen and (max-width: 700px) {
-  .mobile-white{
+  .mobile-white, .mobile-white img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     height: 75px;
     width: auto;
     margin-bottom: 20px;
@@ -153,8 +202,8 @@ html, body {
   .active-mobile .mobile-white{
     display: none;
   }
-  a.logo{
-    display: none;
+  .logo{
+    display: none !important;
   }
   header {
     top: 80px; 
@@ -175,6 +224,16 @@ html, body {
   }
   footer {
     font-size: 12px;
+  }
+  .active-mobile nav{
+    line-height: 20px !important;
+    height: 30px !important;
+    padding: 5px;
+  }
+  nav{
+    line-height: 20px !important;
+    height: 30px !important;
+    padding: 5px;
   }
 }
 
@@ -216,7 +275,6 @@ html, body {
 @media only screen and (min-width: 500px) {
   /* For tablets: */
   .col-s-half {width: 50%;}
-  .col-s-two-thirds {width: 100%;}
   .col-s-full {width: 100%;}
 }
 
@@ -226,41 +284,46 @@ html, body {
   .col-half {width: 50%;}
   .col-two-thirds {width: 66.66%;}
   .col-full {width: 100%;}
+  .embed-container {padding-bottom: 50% !important;}
 }
 
-  main{
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    overflow: hidden;
-  }
+main{
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
 
-  section, div{
-    overflow: hidden;
-  }
-  div img{
-    width: 100%;
-    height: auto;
-  }
+section, div{
+  overflow: hidden;
+}
+
+div img{
+  width: 100%;
+  height: auto;
+}
   
-  section::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  h1{
-    text-align: center;
-  }
+section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1{
+  text-align: center;
+}
+
+

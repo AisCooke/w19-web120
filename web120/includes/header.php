@@ -1,3 +1,4 @@
+<?php include 'config.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +16,8 @@
 <link rel="stylesheet" href="css/form.css" />
 <link rel="stylesheet" href="css/table.css" />
 <link rel="stylesheet" href="css/iframe.css" />
+
+
 </head>
 
 <body>

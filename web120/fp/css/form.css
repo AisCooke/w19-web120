@@ -1,0 +1,23 @@
+/* start reCAPTCHA styles */
+
+form>div {
+    margin:1em;
+}
+
+/* writes to small text above reCAPTCHA upon failure */
+
+
+input[type="submit"], input[type="button"] {
+  background-color: grey;
+  padding: 0.5em 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea
+{
+  background-color:#f1f1f1;
+  border:1px solid #ccc;
+  width: 100%;
+}
