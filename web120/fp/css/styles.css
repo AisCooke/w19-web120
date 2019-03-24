@@ -348,11 +348,16 @@ main{width: 100%;}
   .active-mobile a.icon {
     color: #000;
   }
-
+  .active li:hover a.underline, .active-mobile li:hover a.underline{
+    border-bottom: none;
+  }
 
 }
 
 @media screen and (max-width: 300px) {
+  .active li:hover a.underline, .active-mobile li:hover a.underline{
+    border-bottom: none;
+  }
   .topnav.responsive {
     position: relative;
     z-index: 1;
