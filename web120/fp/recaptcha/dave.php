@@ -18,7 +18,7 @@
  */
 
 #EDIT THE FOLLOWING:
-$toAddress = "aisling.cooke@seattlcolleges.edu";  //place your/your client's email address here
+$toAddress = "aisling.cooke@seattlecolleges.edu";  //place your/your client's email address here
 $toName = "Aisling Cooke"; //place your client's name here
 $website = "swordfern.dreamhosters.com/web120";  //place NAME of your client's website here
 #--------------END CONFIG AREA ------------------------#
