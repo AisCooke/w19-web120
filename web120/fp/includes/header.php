@@ -18,56 +18,39 @@
     <div class="hero"></div>
     <header id="navbar">
       <a href="index.php" class="mobile-white"><img src="images/logo-white.svg" alt="Dave's Meat and Produce"></a>
-      <nav>
-       <!-- comment out
-        <ul>
-        <li class="dropdown">
-          <a href="" class="dropbtn">Meat</a>
-          <ul class="dropdown-content">
-          <li><a href="#">Beef</a></li>
-            <li><a href="#">Pork</a></li>
-            <li><a href="#">Sausage</a></li>
-            <li><a href="#">Lamb</a></li>
-            <li><a href="#">Poultry</a></li>
-            <li><a href="#">Fish</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="" class="dropbtn">Produce</a></li>
-          <ul class="dropdown-content">
-          <li><a href="#">Fruit</a></li>
-            <li><a href="#">Vegetables</a></li>
-          </ul>
-        </li>
-        <li><a class="logo" href="index.php">
-          <img class="white" src="images/logo-white.svg" alt="Dave's Meat and Produce">
-          <img class="black" src="images/logo-black.svg" alt="Dave's Meat and Produce">
-        </a></li>
-        <li class="dropdown">
-          <a href="" class="dropbtn">About</a>
-          <ul class="dropdown-content">
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Philosophy</a></li>
-            <li><a href="#">Farms</a></li>
-          </ul>
-        </li>
-        <li><a href="" class="dropbtn">Contact</a></li>
-      </ul> -->
-
-      <ul class="topnav" id="myTopnav">
-     <li><a href="">Meat</a></li>
-     <li><a href="">Meat</a></li>
-      <li class="logo" >
-        <a href="index.php">
-          <img class="white" src="images/logo-white.svg" alt="Dave's Meat and Produce">
-          <img class="black" src="images/logo-black.svg" alt="Dave's Meat and Produce">
-        </a>
-      </li>
-      <li><a href="">Meat</a></li>
-      <li><a href="">Meat</a></li>
-    </ul>
-
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myResponsive()">&#9776;</a>
+      <nav class="topnav" id="myTopnav">
+        <ul class="nav-ul" >
+          <li class="dropdown">
+              <a href="meat.php" class="underline" tabindex="1">Meat</a>
+              <ul class="dropdown-content">
+                <li><a href="beef.php">Beef</a></li>
+                <li><a href="pork.php">Pork</a></li>
+                <li><a href="sausage.php">Sausage</a></li>
+                <li><a href="lamb.php">Lamb</a></li>
+                <li><a href="poultry.php">Poultry</a></li>
+                <li><a href="fish.php">Fish</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="produce.php" class="underline" tabindex="2">Produce</a>
+              <ul class="dropdown-content">
+              <li><a href="fruit.php">Fruit</a></li>
+                <li><a href="vegetables.php">Vegetables</a>
+              </ul>
+            </li>
+          <li class="logo" >
+            <a href="index.php" tabindex="3">
+              <img class="white" src="images/logo-white.svg" alt="Dave's Meat and Produce">
+              <img class="black" src="images/logo-black.svg" alt="Dave's Meat and Produce">
+            </a>
+          </li>
+          <li ><a href="about.php" class="underline" tabindex="4">About</a>
+            </li>
+          <li><a href="contact.php" class="underline" tabindex="5">Contact</a></li>
+        </ul>
       </nav>
     </header>
+
     <main>
     <h1><?=$pageid?></h1>

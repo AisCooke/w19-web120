@@ -28,3 +28,13 @@ if($(window).scrollTop() > 180) {
   navbar.classList.remove("active-mobile");
 }
 });
+function myResponsive() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+

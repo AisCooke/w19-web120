@@ -42,7 +42,7 @@ if ($response != null && $response->success)
     <!-- START HTML FEEDBACK -->
     <div class="contact-feedback">
         <h2>Your Comments Have Been Received!</h2>
-        <p>Thanks for the input!</p>
+        <p>Thank you for your message.</p>
         <p>We'll respond via email within 48 hours, if you requested information.</p>
     </div>    
     <!-- END HTML FEEDBACK -->        
@@ -59,47 +59,48 @@ if ($response != null && $response->success)
 	<form action="<?php echo basename($_SERVER['PHP_SELF']); ?>" method="post">
 	<div>
 		<label>
-			Name:<br /><input type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" tabindex="10" size="44" autofocus />
+			Name:<br /><input type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" tabindex="6" size="44" autofocus />
 		</label>
 	</div>
 	<div>	
 		<label>
-			Email:<br /><input type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" tabindex="20" size="44" />
+			Email:<br /><input type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" tabindex="7" size="44" />
 		</label>
 	</div>
 	<!-- below change the HTML to your form elements - only 'Name' & 'Email' (above) are significant -->
     <div>	
 		<label>
-			What's your reason for contacting us?<br />
-			<select name="What's_your_reason_for_contacting_us?" required="required" title="Your Reason is required" tabindex="40">
-				<option value="">Your Reason</option>
-				<option value="Phone">Phone</option>
-				<option value="Web">Web</option>
-				<option value="Magazine">Magazine</option>
-				<option value="A Friend">A Friend</option>
+			What's your message about?<br />
+			<select name="What's_your_message_about?" required="required" title="Subject is required" tabindex="8">
+				<option value="">Your Subject</option>
+				<option value="Vendor">Vendor</option>
+				<option value="Information Request">Information Request</option>
+				<option value="Stocking Request">Stocking Request</option>
+				<option value="Feedback">Feedback</option>
 				<option value="Other">Other</option>
 			</select>
 		</label>
 	</div>
 	<div>	
 		<label>
-			Comments:<br /><textarea name="Comments" cols="36" rows="4" placeholder="Your comments are important to us!" tabindex="50"></textarea>
+			Comments:<br /><textarea name="Comments" cols="36" rows="4" placeholder="Your comments are important to us!" tabindex="9"></textarea>
 		</label>
 	</div>	
-    <div>
-			<label>Would you like to join our mailing list?
-			<br />
+	<div>
+		<fieldset>
+			<legend>Would you like to join our mailing list?</legend>
 			<input type="radio" name="Join_Mailing_List?" value="Yes" 
-			required="required" title="Mailing list is required" tabindex="50"  
+			required="required" title="Mailing list is required" tabindex="10"  
 			/> Yes <br />
-			<input type="radio" name="Join_Mailing_List?" value="No" /> No <br />
-			</label>
+			<input type="radio" name="Join_Mailing_List?" value="No" tabindex="11"/> No <br />
+		</fieldset>
 	</div>
 
 	<div><?=$feedback?></div>
-    <div class="g-recaptcha" data-sitekey="<?=$siteKey;?>"></div>
+	<div class="g-recaptcha" data-sitekey="<?=$siteKey;?>" data-size="normal" tabindex="12" ></div>
+	
 	<div>
-		<input type="submit" value="submit" />
+		<input type="submit" value="SUBMIT" class="button" tabindex="13" />
 	</div>
     </form>
 	<!-- END HTML FORM -->

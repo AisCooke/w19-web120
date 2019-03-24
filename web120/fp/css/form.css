@@ -1,15 +1,26 @@
 /* start reCAPTCHA styles */
 
 form>div {
-    margin:1em;
+  margin-top:10px;
+  margin-bottom: 10px;
 }
 
 /* writes to small text above reCAPTCHA upon failure */
 
 
-input[type="submit"], input[type="button"] {
-  background-color: grey;
+.button {
+  background-color: #b0b0b0;
   padding: 0.5em 1em;
+  font-size: calc(10px + 1vw);
+  font-family: 'Rokkitt', serif;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top:10px;
+  margin-bottom: 10px;
+  border: none;
+}
+.button:hover{
+  background-color: #8c8c8c;
 }
 
 input[type="text"],
@@ -17,7 +28,28 @@ input[type="email"],
 input[type="phone"],
 textarea
 {
-  background-color:#f1f1f1;
-  border:1px solid #ccc;
+  background-color:#f9f9f9;
+  border:1px solid #ddd;
   width: 100%;
+}
+
+@media only screen and (max-width: 380px) {
+  .g-recaptcha {
+    transform:scale(0.75);
+    transform-origin:0 0;
+    overflow: visible;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .g-recaptcha {
+    transform:scale(0.6);
+    transform-origin:0 0;
+    overflow: visible;
+  }
+}
+fieldset{
+  margin: 0px;
+  border: none;
+  padding: 0px;
 }
